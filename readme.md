@@ -82,3 +82,47 @@ git checkout -
 
 即可切换回上一次使用的分支。
 
+## 拉取分支
+
+在您当前分支中，使用：
+
+```bash
+git pull origin other_branch_name
+```
+
+可以将`other_branch_name`分支中的内容获取到。
+
+# 强制回滚
+
+首先，进入你希望回滚的分支，并在命令行中输入：
+
+```bash
+git log
+```
+
+能够获取到多个该分支的创建信息。界面上会出现：
+
+```
+commit 一串版本号哈希数值 (HEAD -> branch_name, ...)
+Author: xxx<xxx@xx.com>
+Data: Set 时间信息
+	(comments)
+	
+...
+```
+
+除此以外，也可以在github官网上查看。
+
+将希望回到的目标分支的版本号哈希数值编码记录下来，然后输入：
+
+```bash
+git reset --hard 你所记录的版本号哈希数值
+```
+
+完成回滚的提交。需要注意的是，该分支该回滚到目标版本时间点后的提交将**不再存在**。在您反复确认后，输入强制提交指令：
+
+```bash
+git push -f
+```
+
+能够完成回滚。
