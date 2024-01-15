@@ -1,5 +1,7 @@
 Thx to Liferlifer. There's a [Perfact chatting paper](https://github.com/LiferLifer/TransferChan).
 
+**求观众老爷给个Star** qwq
+
 # 使用github对现有仓库进行修改
 
 ## 克隆仓库
